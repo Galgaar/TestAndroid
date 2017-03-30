@@ -1,11 +1,14 @@
 package com.example.rdoison.myapplication;
 
+import android.content.Intent;
+import android.location.Location;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -34,6 +37,13 @@ public class MainActivity extends AppCompatActivity {
         runEdit = (EditText) findViewById(R.id.run);
         walkEdit = (EditText) findViewById(R.id.walk);
         durationEdit = (EditText) findViewById(R.id.duration);
+    }
+
+    public void startProgram(View view) {
+        Intent intent = new Intent(this, ProgramActivity.class);
+        String tag = view.getTag().toString();
+        intent.putExtra("tag", tag);
+        startActivity(intent);
     }
 
     public void start(View view) {
