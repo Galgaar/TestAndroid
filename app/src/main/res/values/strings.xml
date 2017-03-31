@@ -5,4 +5,5 @@
     <string name="run_text">Run</string>
     <string name="walk_text">Walk</string>
     <string name="total_text">Total</string>
+    <string name="w1">Week 1</string>
 </resources>

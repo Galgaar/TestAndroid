@@ -1,14 +1,11 @@
 package com.example.rdoison.myapplication;
 
 import android.content.Intent;
-import android.location.Location;
 import android.os.Bundle;
 import android.os.CountDownTimer;
-import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -33,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        countdown = (TextView) findViewById(R.id.countdown);
+        countdown = (TextView) findViewById(R.id.countdown_session);
         runEdit = (EditText) findViewById(R.id.run);
         walkEdit = (EditText) findViewById(R.id.walk);
         durationEdit = (EditText) findViewById(R.id.duration);
